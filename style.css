@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/images/bg-mobile.svg);
+    color: white;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.logo {
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.content .illustration {
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.illustration img {
+    width: 100%;
+    background-position: center;
+}
+
+.main-info {
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+
+.main-info h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.main-info p {
+    color: whitesmoke;
+    padding-top: 20px;
+    line-height: 1.5em;
+
+}
+
+.main-info button {
+    font-size: 12px;
+    outline: none;
+    padding: 6px 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: white ;
+    color: hsl(257, 40%, 49%);
+}
+
+footer  {
+    flex: 1;
+    text-align: center;
+}
+
+footer i {
+    font-size: 40px;
+    margin: 10px 10px;
+}
+
+footer i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media only screen and  (min-width: 375px) {
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .logo {
+        width: 150px;
+        padding-bottom: 0;
+    }
+
+    .content {
+        display: flex;
+        padding-bottom: 0;
+    }
+    .content .illustration {
+        margin-right: 10px;
+        height: 500px;
+        margin-top: 20px;
+    margin-bottom: 0px;
+    }
+    .content .main-info {
+        text-align: left;
+        margin-left: 10px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+   
+
+    .content .main-info h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600px;
+    }
+    .content .main-info p {
+        font-size: 16px;
+        line-height: 1.6em;
+        font-weight: 400px;
+    }
+    footer {
+        text-align: right;
+    }
+    i {
+        font-size: 10%;
+        margin: 10px 10px;
+    }
+}
